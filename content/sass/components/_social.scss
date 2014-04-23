@@ -19,7 +19,6 @@ $social_list: googleplus pinterest facebook linkedin;
 
 	@for $i from 1 through length($social_list) {
 	    .#{nth($social_list, $i)} {
-	    	background-image: url( #{nth($social_list, $i)}.jpg );
 	    	&:before {
 	    		@include use-sprite(social-#{nth($social_list, $i)}, $retina: false, $hover: false);
 	    	}
